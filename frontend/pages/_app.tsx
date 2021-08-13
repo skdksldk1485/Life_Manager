@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { ApolloProvider } from '@apollo/client';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { useApollo } from 'lib/apollo';
+import Header from 'components/Header';
 import Head from 'next/head';
 
 const GlobalStyle = createGlobalStyle`
@@ -43,6 +44,7 @@ export default function MyApp({ Component, pageProps }) {
       <ApolloProvider client={apolloClient}>
         <GlobalStyle />
           <CssBaseline />
+            <Header />
             <Component {...pageProps} />
       </ApolloProvider>
     </>
