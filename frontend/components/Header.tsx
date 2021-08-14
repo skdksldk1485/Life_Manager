@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import { Menu, Close } from '@material-ui/icons';
+import { useAuth } from 'lib/useAuth';
 
 const NavBar = styled.div`
   display: flex;
@@ -54,6 +55,7 @@ const Button = styled.a`
 
 export default function Header() {
   const router = useRouter();
+  const { user } = useAuth();
 
   const [navToggleOpen, setNavToggleOpen] = useState(false);
 
@@ -66,8 +68,10 @@ export default function Header() {
   };
 
   const links = [
-    { label: 'Sign Up', href: '/auth/signup' },
-    { label: 'Sign In', href: '/auth/signin' },
+    !user && { label: 'Sign Up', href: '/auth/signup' },
+    !user && { label: 'Sign In', href: '/auth/signin' },
+    user && { label: 'Create', href: '/streams/new' },
+    user && { label: 'Sign Out', href: '/auth/signout' },
   ]
     .filter(link => link)
     .map(({ label, href }) => {
