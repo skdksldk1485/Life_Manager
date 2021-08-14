@@ -1,0 +1,27 @@
+{
+  "name": "life",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspace @life/frontend run build",
+    "start": "yarn workspace @life/backend run start",
+    "dev": "yarn workspace @life/backend run dev"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skdksldk1485/Streami/issues"
+  },
+  "homepage": ""
+}

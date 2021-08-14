@@ -16,7 +16,6 @@ const NavBar = styled.div`
   padding: 50px 80px;
   transition: 0.5s;
   z-index: 30;
-
   .nav-items {
     &-open {
       margin: 1rem;
@@ -48,7 +47,6 @@ const Button = styled.a`
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
-
   &:hover {
     border-bottom: 1px solid;
   }
