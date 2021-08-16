@@ -9,6 +9,9 @@ input AuthInput {
 }
 
 type Mutation {
+  addStream(input: StreamInput!): Stream!
+  deleteStream(streamId: ObjectId!): Boolean!
+  editStream(input: StreamInput!): Stream!
   login(input: AuthInput!): UserResponse!
   register(input: AuthInput!): UserResponse!
 }
@@ -18,7 +21,25 @@ scalar ObjectId
 
 type Query {
   currentUser: User
+  stream(streamId: ObjectId!): Stream
+  streams: [Stream!]!
   user(userId: ObjectId!): User
+}
+
+"""Stream embedded post content"""
+type Stream {
+  _id: ObjectId!
+  author: User!
+  description: String!
+  title: String!
+  url: String!
+}
+
+input StreamInput {
+  description: String
+  id: ObjectId
+  title: String!
+  url: String!
 }
 
 """User"""

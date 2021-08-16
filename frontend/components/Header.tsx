@@ -70,7 +70,7 @@ export default function Header() {
   const links = [
     !user && { label: 'Sign Up', href: '/auth/signup' },
     !user && { label: 'Sign In', href: '/auth/signin' },
-    user && { label: 'Create', href: '/streams/new' },
+    user && { label: 'Create', href: '/streams/create' },
     user && { label: 'Sign Out', href: '/auth/signout' },
   ]
     .filter(link => link)
