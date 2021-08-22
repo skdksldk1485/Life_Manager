@@ -46,7 +46,7 @@ export default function Streams() {
           <Description>
             Create your own meditaion stream collection!
           </Description>
-          <Link href='/streams/new'>
+          <Link href='/streams/create'>
             <a>Create new stream</a>
           </Link>
         </Info>
