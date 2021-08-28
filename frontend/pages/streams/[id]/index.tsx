@@ -6,6 +6,11 @@ import styled from 'styled-components';
 const Container = styled.div`
   margin: 160px 80px;
   text-align: center;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    margin: 80px 10px;
+    text-align: center;
+  }  
 `;
 
 export default function StreamDetail({ id }) {

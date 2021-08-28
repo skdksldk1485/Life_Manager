@@ -6,6 +6,7 @@ import { useApollo } from 'lib/apollo';
 import { AuthProvider } from 'lib/useAuth';
 import Header from 'components/Header';
 import Head from 'next/head';
+import theme from '../lib/theme';
 
 const GlobalStyle = createGlobalStyle`
   
@@ -44,11 +45,13 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
       <ApolloProvider client={apolloClient}>
         <GlobalStyle />
+        <ThemeProvider theme={theme}>
           <CssBaseline />
           <AuthProvider>
             <Header />
             <Component {...pageProps} />
           </AuthProvider>
+        </ThemeProvider>
       </ApolloProvider>
     </>
   );

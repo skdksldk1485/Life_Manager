@@ -56,6 +56,23 @@ const Showcase = styled.div`
       cursor: pointer;
     }
   }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    h1 {
+      margin-top: 140px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.device.mobileSmall} {
+    h1 {
+      margin-top: 100px;
+    }
+  }  
 `;
 
 const Button = styled.button`
@@ -75,6 +92,10 @@ const Button = styled.button`
       rgba(142, 223, 249, 0.9962359943977591) 100%
     );
   }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 0.8rem;
+  }  
 `;
 
 const bounce = keyframes`
@@ -96,6 +117,24 @@ const Bounce = styled.div`
   .arrow-icon {
     transform: scale(3.2);
   }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 0.8rem;
+    margin-top: 160px;
+
+    .arrow-icon {
+      transform: scale(2.2);
+    }
+  }
+
+  @media ${({ theme }) => theme.device.mobileSmall} {
+    font-size: 0.8rem;
+    margin-top: 80px;
+
+    .arrow-icon {
+      transform: scale(2);
+    }
+  }
 `;
 
 const SectionContainer = styled.div`
@@ -103,6 +142,10 @@ const SectionContainer = styled.div`
   height: 100vh;
   display: flex;
   color: #fff;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    flex-direction: column;
+  }  
 `;
 
 const Section = styled.div`
@@ -148,6 +191,28 @@ const SectionContent = styled.div`
     text-align: center;
     margin: 0 auto auto auto;
   }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    .icon {
+      width: 80px;
+      height: 80px;
+      padding: 8px 16px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.device.tablet} {
+    .icon {
+      width: 80px;
+      height: 80px;
+      padding: 8px 16px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 const FloatingButton = styled.button< { show : boolean } >`
@@ -174,6 +239,16 @@ const FloatingButton = styled.button< { show : boolean } >`
   .arrow-icon {
     transform: scale(3);
   }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+
+    .arrow-icon {
+      transform: scale(2);
+    }
+  }  
 `;
 
 const Footer = styled.footer`
@@ -183,6 +258,10 @@ const Footer = styled.footer`
   background: #0d0d0d;
   height: 140px;
   color: white;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 0.8rem;
+  }  
 `;
 
 export default function Index() {
@@ -256,8 +335,7 @@ export default function Index() {
         </Section>
       </SectionContainer>
       <Footer>
-        {new Date().getFullYear()} Life Manager | All rights reserved.
-        | KIM ISU
+        {new Date().getFullYear()} Life Manager | KIM ISU
       </Footer>
       <FloatingButton onClick={scrollToTop} show={showScroll}>
         <KeyboardArrowUpRounded className='arrow-icon' />

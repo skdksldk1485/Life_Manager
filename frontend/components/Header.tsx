@@ -17,7 +17,21 @@ const NavBar = styled.div`
   padding: 50px 80px;
   transition: 0.5s;
   z-index: 30;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 0.8rem;
+    padding: 0.75rem 2rem;
+    display: block;
+    width: 100%;
+  }
+
   .nav-items {
+    @media ${({ theme }) => theme.device.mobile} {
+      margin: auto;
+      text-align: center;
+      display: none;
+    }
+
     &-open {
       margin: 1rem;
       display: flex;
@@ -30,6 +44,10 @@ const Logo = styled.a`
   font-family: 'DM Serif Text', serif;
   font-size: 2.6rem;
   cursor: pointer;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 2rem;
+  } ;
 `;
 
 const ToggleBtn = styled.div`
@@ -42,12 +60,17 @@ const ToggleBtn = styled.div`
   outline: none;
   display: none;
   cursor: pointer;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    display: block;
+  } ;
 `;
 
 const Button = styled.a`
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
+
   &:hover {
     border-bottom: 1px solid;
   }
