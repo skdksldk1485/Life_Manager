@@ -335,7 +335,7 @@ export default function Index() {
         </Section>
       </SectionContainer>
       <Footer>
-        {new Date().getFullYear()} Life Manager | KIM ISU
+        {new Date().getFullYear()} | Life Manager | KIM ISU
       </Footer>
       <FloatingButton onClick={scrollToTop} show={showScroll}>
         <KeyboardArrowUpRounded className='arrow-icon' />

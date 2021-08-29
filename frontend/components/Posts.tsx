@@ -72,7 +72,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   card: {
     display: 'flex',
-    overflow: 'scroll',
   },
   cardDetails: {
     flex: 1,
