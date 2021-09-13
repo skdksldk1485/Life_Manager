@@ -112,7 +112,7 @@ const bounce = keyframes`
 
 const Bounce = styled.div`
   animation: ${bounce} 2s infinite;
-  margin-top: 300px;
+  margin-top: 250px;
 
   .arrow-icon {
     transform: scale(3.2);

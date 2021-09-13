@@ -41,14 +41,6 @@ export default function Posts(props: Props) {
                       {post.title}
                     </Typography>
                     <Typography
-                      noWrap={true}
-                      variant='subtitle1'
-                      color='textSecondary'
-                      className={styles.cardText}
-                    >
-                      {post.url}
-                    </Typography>
-                    <Typography
                       variant='subtitle1'
                       paragraph
                       className={styles.cardText}

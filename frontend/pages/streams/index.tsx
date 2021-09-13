@@ -49,7 +49,7 @@ export default function Streams() {
       {!loading && data && data.streams.length === 0 && (
         <Info>
           <Description>
-            Create your own meditaion stream collection!
+            Create your own stream collection!
           </Description>
           <Link href='/streams/create'>
             <a>Create new stream</a>
@@ -61,7 +61,7 @@ export default function Streams() {
         <Info>
           <Description>
             Join us! <br />
-            Share your favorite meditation streaming content!
+            Record your favorite streaming content!
           </Description>
           {}
           <Link href='/auth/signup'>
