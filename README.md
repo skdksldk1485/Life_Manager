@@ -6,6 +6,9 @@ Life Manager는 자기계발을 위해 자신이 자주 보고 싶은 동영상 
 사용자가 회원가입을하고 로그인을 하면 youtube 등에서 자신에게 도움이 되는 동영상 등의 링크를 iframe url을 입력해 생성하면, 
 streams 페이지에서 자신이 등록한 동영상을 다시 확인해볼 수 있습니다.<br />
 
+>아래 링크에서 데모 확인이 가능합니다. <br />
+https://life-manager.herokuapp.com/
+<br />
 <br />
 
 #### 사용기술
