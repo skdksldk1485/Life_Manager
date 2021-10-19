@@ -44,7 +44,8 @@ https://life-manager.herokuapp.com/
 ### ⚡ Streams 추가
 ![Animation4](https://user-images.githubusercontent.com/29578054/133893247-be99f946-962c-4671-82b8-90ea6e9aadb7.gif)
 <br />
-로그인 후에 Create 페이지로 이동하면, Title과 Description, iframe URL입력을 통해 동영상 stream을 추가할 수 있습니다. <br />
+로그인 후에 Create 페이지로 이동하면, <br />
+Title과 Description, iframe URL입력을 통해 동영상 stream을 추가할 수 있습니다. <br />
 생성 후에는 next.js의 **useRouter**를 기능을 이용해 리스트를 볼 수 있는 Streams 페이지로 이동되도록 구현하였습니다.
 <br />
 
@@ -57,13 +58,14 @@ https://life-manager.herokuapp.com/
 ### ⚡ Streams 페이지
 ![Animation6-min](https://user-images.githubusercontent.com/29578054/133893306-9fe35dda-9aa3-4a05-9d73-334ce745b442.gif)
 <br />
-로그인 후 Streams페이지로 이동하면, 이전에 등록한 동영상 목록이 확인 가능하며, 선택하여 동영상을 재생할 수 있습니다. 
+로그인 후 Streams페이지로 이동하면, <br />
+이전에 등록한 동영상 목록이 확인 가능하며, 선택하여 동영상을 재생할 수 있습니다. 
 <br />
 
 ### ⚡ Scroll 버튼
 ![Animation_7](https://user-images.githubusercontent.com/29578054/133929110-172ef20e-435a-44cc-9fbc-af23cf1eeee3.gif)
 <br />
-**화살표 이미지(svg)에 애니메이션을 주어 스크롤 Down 버튼을 구현**하였고, 
+**화살표 이미지(svg)에 애니메이션을 주어 스크롤 Down 버튼을 구현**하였고, <br />
 유저가 스크롤을 하면 **최상단으로 이동할 수 있는 스크롤 Up 버튼을 구현**하였습니다.
 <br />
 
@@ -87,6 +89,6 @@ Node.js와 Javascript, react만으로 웹을 구현 할 때와는 다르게<br /
 이번 프로젝트에서는 Next.js와 같은 프레임워크를 도입할수록 제약사항이나 환경설정이 많아져 힘들었지만,<br />
 나중에 규모가 큰 프로젝트를 진행할 경우 로직이 통일되어 효율적이겠다고 느낄 수 있었습니다.<br />
 그리고 Next.js을 도입하는 과정에서 서버사이드 렌더링의 전체적인 흐름을 읽을 수 있었으며,<br />
-TypeScript를 적용함으로써 코드를 읽기 쉽게 도와주고, 데이터에 타입을 명시해주어 안정적인 프로그래밍이 가능하도록 하는 개발경험을 얻을 수 있었습니다.<br />
-이러한 경험을 겪으며 앞으로는 static 언어인 TypeScript를 더 공부하여 OOP에 익숙해져야겠다는 생각을 갖게되었습니다.<br />
+TypeScript를 적용함으로써 코드를 읽기 쉽게 도와주고, 데이터에 타입을 명시해주어 안정적인 프로그래밍이 가능하도록 하는 개발경험을 얻을 수 있었고 <br />
+앞으로는 static 언어인 TypeScript를 더 공부하여 OOP에 익숙해져야겠다는 생각을 갖게되었습니다.<br />
 
