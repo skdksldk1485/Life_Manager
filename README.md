@@ -1,4 +1,4 @@
-## Project
+## 👩‍💻프로젝트 
 
 Life Manager는 자기계발을 위해 자신이 자주 보고 싶은 동영상 링크를 저장해 플레이리스트를 보여주고, <br />
 플레이 할 수 있는 url 링크 저장소 서비스입니다.<br /><br />
@@ -6,12 +6,17 @@ Life Manager는 자기계발을 위해 자신이 자주 보고 싶은 동영상 
 사용자가 회원가입을하고 로그인을 하면 youtube 등에서 자신에게 도움이 되는 동영상 등의 링크를 iframe url을 입력해 생성하면, 
 streams 페이지에서 자신이 등록한 동영상을 다시 확인해볼 수 있습니다.<br />
 
->아래 링크에서 데모 확인이 가능합니다. <br />
-https://life-manager.herokuapp.com/
-<br />
+
 <br />
 
-#### 사용기술
+## 💻 사이트
+
+> 아래 링크에서 프로젝트 데모 확인이 가능합니다. <br />
+- 🎯 사이트 :https://life-manager.herokuapp.com/
+
+<br />
+
+## 📗사용기술
 - HTML5 / CSS3
 - Typescript
 - React
@@ -20,7 +25,23 @@ https://life-manager.herokuapp.com/
 - Apollo
 - Styled-components, material-ui
 
-#### 구현기능
+<br />
+
+## 📝담당업무
+- JWT 토큰과 SessionStorage를 사용하여 로그인/로그아웃 구현
+- TypeScript를 적용함으로써 코드 가독성 및 안전성 향상
+- GraphQL을 사용하여 동영상 stream CRUD 구현
+- Material-UI를 사용한 그리드 구현
+- nextjs의 useRouter기능을 통해 헤더 스타일을 동적으로 구현
+- Next 기반의 SSR 웹 애플리케이션 구축
+- keyframe을 활용한 스크롤 애니메이션 구현
+- 랜딩페이지 scrollDown, scrollUp 구현
+- Styled-component으로 웹 디자인 구성
+- 미디어쿼리를 이용한 반응형웹 구현
+
+<br />
+
+## 📜구현기능
 - 회원가입/로그인/로그아웃
 - 동영상 stream CRUD 
 - 랜딩페이지 scrollDown, scrollUp
