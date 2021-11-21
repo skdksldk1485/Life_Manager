@@ -18,6 +18,11 @@ streams 페이지에서 자신이 등록한 동영상을 다시 확인해볼 수
 
 <br />
 
+## 📆 기간
+  - 2021.07 ~ 2021.08
+
+<br />
+
 ## 📗사용기술
   - Front End
     - React, Next.js, Styled-components, Typescript
