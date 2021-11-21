@@ -19,13 +19,11 @@ streams 페이지에서 자신이 등록한 동영상을 다시 확인해볼 수
 <br />
 
 ## 📗사용기술
-- HTML5 / CSS3
-- Typescript
-- React
-- GraphQL
-- next.js
-- Apollo
-- Styled-components, material-ui
+  - Front End
+    - React, Next.js, Styled-components, Typescript
+    
+  - Back End
+    - Apollo, GraphQL, MongoDB
 
 <br />
 
